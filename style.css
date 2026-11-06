@@ -1,0 +1,100 @@
+#div1, #div2, #div3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    display: inline-block;
+}
+
+#div1 {
+    background-color: red;
+}
+
+#div2 {
+    background-color: blue;
+}
+
+#div3 {
+    background-color: green;
+}
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+#div1, #div2, #div3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: glow 1.5s infinite alternate;
+}
+
+#div1 {
+    background: red;
+    box-shadow: 0 0 20px red, 0 0 40px red;
+}
+
+#div2 {
+    background: blue;
+    box-shadow: 0 0 20px blue, 0 0 40px blue;
+}
+
+#div3 {
+    background: lime;
+    box-shadow: 0 0 20px lime, 0 0 40px lime;
+}
+
+@keyframes glow {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {
+    background-color: #222;
+}
+
+.container {
+    width: 130px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#div1, #div2, #div3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#div1 {
+    background-color: red;
+    box-shadow: 0 0 25px red;
+}
+
+#div2 {
+    background-color: yellow;
+    box-shadow: 0 0 25px yellow;
+}
+
+#div3 {
+    background-color: lime;
+    box-shadow: 0 0 25px lime;
+}
+#div3:hover{
+    box-shadow: 0 0 20px 10px chartreuse;
+}
